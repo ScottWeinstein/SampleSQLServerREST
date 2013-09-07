@@ -1,0 +1,11 @@
+extends layout
+
+block javascripts
+  script(src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.2.2/d3.js")
+  script(src="/javascripts/sample.js")
+block content
+  h1= title
+  p Welcome to #{title}
+  p goto 
+    a(href="/data/?sql=select * from table")
+      for data
